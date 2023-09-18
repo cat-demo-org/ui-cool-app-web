@@ -9,8 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clone-deps": "cd .. && (git clone git@github.com:cat-demo-org/ui-cool-app-shared.git || echo 'already exists') && (git clone git@github.com:cat-demo-org/demo-api-sdk.git || echo 'already exists') && (git clone git@github.com:cat-demo-org/ui-web-components.git || echo 'already exists')",
-    "link-deps": "pnpm link ../ui-web-components; pnpm link ../ui-cool-app-shared; cd ../ui-cool-app-shared && pnpm link-deps"
+    "clone-and-link": "sh ./clone-and-link-deps.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

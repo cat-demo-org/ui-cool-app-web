@@ -4,11 +4,10 @@
 
 When developing Cool App, all of it's internal org dependencies should be pulled as well to allow seamless development as needed. Follow the steps below to work on this application:
 
-
 - Run `git clone git@github.com:cat-demo-org/ui-cool-app-web.git` then cd into the newly cloned repo
 - Run `pnpm i` to install package dependencies
-- Run `pnpm clone-deps` to clone additional local dependencies
-- Run `pnpm link-deps` to link all necessary local dependencies
+- Run `pnpm clone-and-link` to clone and link additional dependencies for development
+
 ### Separate Runtime
 - You should now open a terminal in each of the newly cloned repository directories
 - In the `demo-api-sdk` terminal -- Run `pnpm dev`
